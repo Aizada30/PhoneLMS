@@ -48,19 +48,23 @@ public class Main {
                         new Phone(1, "Aizada", "Sumsung")
                         , new Phone(2, "Jiro", "IPhone")
                         , new Phone(3, "Haru", "Lenova")))));
+                    break;
                 case 2 : System.out.println(phoneService.getAllPhones());
+                    break;
                 case 3 : System.out.println(phoneService.getPhoneById(2));
+                    break;
                 case 4 : phoneService.getAllPhonesByBrand("IPhone");
-                case 5 : phoneService.updatePhoneById(1, "AIZADA");
-                case 6 : phoneService.deletePhoneById(2);
-                case 7 : contactService.addCOntactToPhone(3, new Contact("LILO", "366336"));
-                case 8 : contactService.addCOntactToPhone(3, new Contact("Poly", "96589"));
-                case 9 : contactService.addCOntactToPhone(3, new Contact("Kilo", "45454"));
-                case 10 : System.out.println(contactService.findContactByName(3, "poly"));
-                case 11 : contactService.findContactByPhoneNumber(3,"96589");
-                case 12 : System.out.println(contactService.sortContactByName(3));
-                case 13 : contactService.deleteContactByNameFromPhone(3,"Poly");
-                case 14 : isTrue = false;
+                    break;
+                case 5 : phoneService.updatePhoneById(1, "AIZADA"); break;
+                case 6 : phoneService.deletePhoneById(2); break;
+                case 7 : contactService.addCOntactToPhone(3, new Contact("LILO", "366336")); break;
+                case 8 : contactService.addCOntactToPhone(3, new Contact("Poly", "96589")); break;
+                case 9 : contactService.addCOntactToPhone(3, new Contact("Kilo", "45454")); break;
+                case 10 : System.out.println(contactService.findContactByName(3, "poly")); break;
+                case 11 : contactService.findContactByPhoneNumber(3,"96589"); break;
+                case 12 : System.out.println(contactService.sortContactByName(3)); break;
+                case 13 : contactService.deleteContactByNameFromPhone(3,"Poly"); break;
+                case 14 : isTrue = false; break;
             }
         }
 
